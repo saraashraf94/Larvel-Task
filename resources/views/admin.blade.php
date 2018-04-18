@@ -74,11 +74,6 @@ Admin
                                     <a href="/update/{{$employee->id}}"
                                        class="btn btn-success" style="margin-left:5px ;margin-bottom: 7px">
                                         <i class="fa fa-edit" style="margin-right: 3px" ></i>Update</a>
-                                    @if($employee->user->Admin != 1)
-                                    <a href='/makeAdmin/{{$employee->user->id}}' class='btn  btn-primary'
-                                       style="margin-left:5px ;margin-bottom: 7px">
-                                        <i class="fa fa-check" style="margin-right: 3px"></i>Make Admin</a>
-                                    @endif
                                     @if($employee->status == 0)
 
                                         <a href="/disactive/{{$employee->id}}"
@@ -94,9 +89,6 @@ Admin
                                         style="margin-right: 3px"></i>Active</a>
 
                                     @endif
-                                    <a href="/api/{{$employee->id}}"
-                                       class="btn btn-success" style="margin-left:5px ;margin-bottom: 7px">
-                                        <i class="fa fa-send" style="margin-right: 3px" ></i>Get Data</a>
                                 </td>
 
 

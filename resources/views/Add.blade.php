@@ -14,7 +14,12 @@
     
     Image
         <input type="file" name="photo" >
-        <input type="text" placeholder="location" class="form-control col-sm-5" name="location">
+        <input type="text" id="mapLable" placeholder="location" class="form-control col-sm-5" name="location">
+        <input type="button" value="Display Location" onclick="getmyposition();" class="btn btn-outline-success"  />
+        <div id="map" style="border: 1px solid slategray;margin-bottom:10px; width:300px;
+            height:300px;">
+
+        </div>
 
         <select name="status" class="form-control col-sm-5" >
             <option value="1">Active</option>

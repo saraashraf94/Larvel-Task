@@ -109,5 +109,10 @@ class EmployeeController extends Controller
 
     }
 
+    public function show(){
+        return view('Add');
+    }
    
+
+
 }
